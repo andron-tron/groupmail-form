@@ -16,7 +16,7 @@ var data = {data: {_id: '',
 `group_divid`   - Если гуппа связана со структурным подразделением сожержит div_id подразделения, иначе 0.
 `dest[]`        - Массив объектов вида: `{mail: 'eMail', name: 'Полное имя владельца'}`
 
-###Праила валидации###
+### Праила валидации###
 `_id`           - Если создается новая запись, проверяем уникальность адреса. Валидный email в доменах БМЗ
 `group_name`    - Не пустой
 `group_divid`   -  
@@ -43,13 +43,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Если приложение будет использоваться НЕ в корневой папке HTTP сервера используйте **"homepage": "."** в файле package.json
 
 ### `npm run eject`
 
